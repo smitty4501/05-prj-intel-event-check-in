@@ -253,9 +253,34 @@ button .fas {
   display: none;
 }
 
+#greeting:not(:empty) {
+  display: block;
+}
+
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
+}
+
+.error-message {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.celebration-message {
+  margin: 0 0 20px;
+  padding: 16px 20px;
+  border: 1px solid #f2c14e;
+  border-radius: 10px;
+  background: #fff8df;
+  color: #6b4e00;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.storage-notice {
+  margin: 0 0 20px;
+  color: #9b1c1c;
 }
 
 /* Counter */
@@ -348,6 +373,55 @@ select {
   color: #475569;
 }
 
+.team-count {
+  color: #1e293b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.attendee-section {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 2px solid #f1f5f9;
+  text-align: left;
+}
+
+.attendee-section h3 {
+  margin-bottom: 14px;
+  color: #64748b;
+  font-size: 16px;
+  text-align: center;
+}
+
+#emptyAttendeeList {
+  color: #64748b;
+  text-align: center;
+}
+
+.attendee-list {
+  list-style: none;
+}
+
+.attendee-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.attendee-name {
+  color: #334155;
+  font-weight: 600;
+}
+
+.attendee-team {
+  color: #64748b;
+  font-size: 14px;
+  text-align: right;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
@@ -357,6 +431,7 @@ select {
     font-size: 38px;
   }
   .container {
+    width: calc(100% - 30px);
     padding: 32px;
     margin: 0 15px 30px;
   }
